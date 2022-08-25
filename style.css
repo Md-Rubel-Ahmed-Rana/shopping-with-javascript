@@ -5,6 +5,7 @@ body{
 header h1{
     color: white;
     text-align: center;
+    font-size: 50px;
 }
 
 section{
@@ -16,7 +17,6 @@ section{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
-    /* padding: 20px; */
 }
 
 .card{
@@ -59,6 +59,11 @@ img{
     color: white;
     padding: 10px;
     border-radius: 10px;
+}
+
+#product-list > h1{
+    font-size: 40px;
+    border-bottom: 15px solid blue;
 }
 table {
     font-family: arial, sans-serif;

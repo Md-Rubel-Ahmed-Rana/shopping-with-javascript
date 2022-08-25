@@ -1,14 +1,4 @@
 
-
-
-const getPrice = () => {
-    const priceElement = document.getElementsByClassName("price");
-    for(const price of priceElement) {
-        const priceText = price.innerText;
-        console.log(priceText);
-    }
-}
-
 const buttons = document.getElementsByClassName("card-btn");
 for( const button of buttons) {
     button.addEventListener("click", () => {
@@ -41,6 +31,12 @@ for( const button of buttons) {
 
         const currentPrice = totalPrice + priceValue;
         totalPriceElement.innerText = currentPrice;
+
+        // increase the product number
+        const productCounterElement = document.getElementById("product-count");
+        const productCounterString = productCounterElement.innerText;
+        const productCounter = parseInt(productCounterString);
+        productCounterElement.innerText = productCounter + 1;
     })
 }
 // console.log(buttons, cards);
