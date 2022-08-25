@@ -53,10 +53,12 @@ img{
 }
 #product-list{
     text-align: center;
-    background-color: red;
+    background-color: #00ffcbbf;
     margin: 5px auto;
     width: 100%;
     color: white;
+    padding: 10px;
+    border-radius: 10px;
 }
 table {
     font-family: arial, sans-serif;
@@ -75,5 +77,16 @@ td{
 }
 
 tr:nth-child(even) {
-    background-color: #dddddd;
+    background-color: black;
+}
+
+p{
+    font-size: 25px;
+    margin: 5px 0px;
+}
+
+.total-price{
+    font-size: 30px;
+    background-color: darkorchid;
+    padding: 5px 10px;
 }
